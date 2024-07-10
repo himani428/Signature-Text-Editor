@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Text-Editor-Application';
+  selectedTab: string = 'text';
+
+  selectTab(tab: string) {
+    this.selectedTab = tab;
+  }
 }

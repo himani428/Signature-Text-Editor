@@ -1,0 +1,23 @@
+.canvas-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 10px;
+  }
+  
+  canvas {
+    border: 1px solid #000;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

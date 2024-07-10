@@ -1,0 +1,22 @@
+<div class="text-editor">
+  <div class="controls">
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor" [(ngModel)]="textColor" (change)="changeTextColor()">
+
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor" [(ngModel)]="bgColor" (change)="changeBgColor()">
+
+    <label for="textSize">Text Size:</label>
+    <input type="number" id="textSize" [(ngModel)]="textSize" (change)="changeTextSize()">
+  </div>
+  
+  <textarea [ngStyle]="{'color': textColor, 'background-color': bgColor, 'font-size.px': textSize}" 
+            [(ngModel)]="textContent" 
+            (input)="changeText()"></textarea>
+
+  <div class="buttons">
+    <button (click)="clearText()" style="background-color: red;">Clear</button>
+    <button (click)="saveText()" style="background-color: green;">Save</button>
+    <button (click)="reviewText()" style="background-color: yellow;">Review</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="canvas-container">
+    <div class="controls">
+      <label for="textColor">Text Color:</label>
+      <input type="color" id="textColor" [(ngModel)]="textColor" (change)="changeTextColor()">
+  
+      <label for="bgColor">Background Color:</label>
+      <input type="color" id="bgColor" [(ngModel)]="bgColor" (change)="changeBgColor()">
+  
+      <label for="textSize">Text Size:</label>
+      <input type="number" id="textSize" [(ngModel)]="textSize" (change)="changeTextSize()">
+    </div>
+  
+    <canvas #canvas></canvas>
+  
+    <div class="buttons">
+      <button (click)="clearCanvas()" style="background-color: red;">Clear</button>
+      <button (click)="saveCanvas()" style="background-color: green;">Save</button>
+      <button (click)="reviewCanvas()" style="background-color: yellow;">Review</button>
+    </div>
+  </div>
+  
